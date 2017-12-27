@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:maxLines="1"
+        android:id="@+id/et_input_start"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/magnifier_gray"
+        android:textColorHint="@color/bus_gray_hint"
+        android:layout_height="40dp"
+        android:drawablePadding="10dp"
+        android:textSize="16dp"
+        android:focusable="false"
+        android:background="@drawable/shap_gray_corner_bg"
+        android:hint="出发地点"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:maxLines="1"
+        android:layout_below="@id/et_input_start"
+        android:id="@+id/et_input_end"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/magnifier_gray"
+        android:textColorHint="@color/bus_gray_hint"
+        android:layout_height="40dp"
+        android:drawablePadding="10dp"
+        android:textSize="16dp"
+        android:focusable="false"
+        android:background="@drawable/shap_gray_corner_bg"
+        android:hint="到达地点"/>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_below="@id/et_input_end"
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="@color/bus_white"
+        android:background="@drawable/bus_ss_btn_corner_bg"
+        android:text="查询"/>
+
+    <TextView
+        android:id="@+id/tv_nodata"
+        android:layout_below="@id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:visibility="gone"
+        android:text="抱歉，未搜索到换乘数据！"
+        android:textSize="18sp"
+        />
+
+    <ListView
+        android:id="@+id/listview_path"
+        android:visibility="visible"
+        android:layout_below="@id/btn_search"
+        android:layout_width="match_parent"
+        android:divider="@null"
+        android:layout_height="match_parent"></ListView>
+
+</RelativeLayout>

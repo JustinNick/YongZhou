@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grag_bg">
+
+    <com.citylinkdata.yongzhou.userview.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        app:rightImageReId="@drawable/nfc_swich"
+        app:title="@string/nfc_recharge"></com.citylinkdata.yongzhou.userview.TitleView>
+
+
+
+    <com.citylinkdata.yongzhou.userview.GuideView
+        android:layout_below="@id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:type="2"></com.citylinkdata.yongzhou.userview.GuideView>
+
+
+    <ImageView
+        android:id="@+id/move_card_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/card_read_nfc_recharge" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/phone_reading" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_wallet" />
+
+            <TextView
+                android:id="@+id/tv_tips"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_wallet"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:focusable="true"
+                android:text="@string/please_paste_card"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/cloud_tips_basemap"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="@color/red_tips"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tips" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/blue_dark"
+            android:gravity="center"
+            android:text="@string/attach_the_card_to_the_back_of_the_phone"
+            />
+
+
+
+        <!--<TextView-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/not_connected_to_the_Bluetooth_reader" />-->
+
+    </LinearLayout>
+
+</RelativeLayout>

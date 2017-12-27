@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grag_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/banner_my_bg">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="90dp"
+                android:layout_height="86dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/no_header_pic"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="0dp" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="111111111111"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/transparent_black"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/money_balance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="余额：******"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/integral_balance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="积分：******"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_per_info"
+            style="@style/MenuItemStyle"
+            android:text="@string/personal_information" />
+
+        <View style="@style/MenuItemLineStyle" />
+
+        <TextView
+            android:id="@+id/tv_refund_apply"
+            style="@style/MenuItemStyle"
+            android:visibility="gone"
+            android:text="@string/refund_application" />
+
+        <View style="@style/MenuItemLineStyle" />
+
+        <TextView
+            android:id="@+id/tv_modify_pwd"
+            style="@style/MenuItemStyle"
+            android:text="@string/login_password" />
+
+        <View style="@style/MenuItemLineStyle" />
+
+        <TextView
+            android:id="@+id/tv_set_transaction_pwd"
+            style="@style/MenuItemStyle"
+            android:text="@string/transaction_password" />
+
+        <View style="@style/MenuItemLineStyle" />
+
+        <TextView
+            android:id="@+id/tv_logout"
+            style="@style/MenuItemStyle"
+            android:text="@string/sign_out" />
+
+        <View style="@style/MenuItemLineStyle" />
+
+
+    </LinearLayout>
+</ScrollView>

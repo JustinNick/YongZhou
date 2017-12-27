@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+        <Button
+            android:id="@+id/tv_take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="拍照"
+            android:textColor="@color/black_menu"
+            android:textSize="@dimen/title_text_size"></Button>
+        <View style="@style/MenuItemLineStyle" />
+        <Button
+            android:id="@+id/tv_choose_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="选择相册"
+            android:textColor="@color/black_menu"
+            android:textSize="@dimen/title_text_size"></Button>
+        <!--<View style="@style/MenuItemLineStyle" />-->
+        <Button
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="取消"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black_menu"
+            android:textSize="@dimen/title_text_size"></Button>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grag_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/banner_more" />
+
+        <TextView
+            android:id="@+id/tv_user_guidance"
+            style="@style/MenuItemStyle"
+            android:text="@string/use_guidance" />
+
+        <View style="@style/MenuItemLineStyle" />
+
+        <TextView
+            android:id="@+id/tv_feedback"
+            style="@style/MenuItemStyle"
+            android:text="@string/Feedback" />
+
+        <View style="@style/MenuItemLineStyle" />
+
+        <TextView
+            android:id="@+id/telephone_customer"
+            style="@style/MenuItemStyle"
+            android:text="@string/telephone_customer_service" />
+
+        <View style="@style/MenuItemLineStyle" />
+
+        <TextView
+            android:id="@+id/tv_about_us"
+            style="@style/MenuItemStyle"
+            android:text="@string/about_us" />
+
+        <View style="@style/MenuItemLineStyle" />
+
+        <TextView
+            android:id="@+id/tv_update"
+            style="@style/MenuItemStyle"
+            android:text="@string/version_update" />
+
+        <View style="@style/MenuItemLineStyle" />
+
+
+    </LinearLayout>
+</ScrollView>

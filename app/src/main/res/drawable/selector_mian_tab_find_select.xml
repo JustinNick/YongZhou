@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+<!--按下时的图片背景-->
+    <item android:state_selected="true"
+                android:drawable="@drawable/main_life_light" />
+<!--未按下时的图片背景-->
+    <item  android:drawable="@drawable/main_life" />
+</selector>

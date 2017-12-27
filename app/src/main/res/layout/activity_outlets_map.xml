@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.citylinkdata.yongzhou.view.impl.activity.OutletsMapActivity">
+
+    <com.citylinkdata.yongzhou.userview.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/Outlets_detail"></com.citylinkdata.yongzhou.userview.TitleView>
+
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/route_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_view"></com.amap.api.maps.MapView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="111"
+            android:textColor="@color/black_menu"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="111"
+            android:textColor="@color/news_gray_dark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_business_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="111"
+            android:textColor="@color/black_menu"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_business_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="111"
+            android:textColor="@color/black_menu"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_business_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="111"
+            android:textColor="@color/black_menu"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_business_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="111"
+            android:textColor="@color/black_menu"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

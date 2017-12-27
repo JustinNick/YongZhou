@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grag_bg">
+    <!--一期不做退款功能-->
+    <!--app:rightImageReId="@drawable/refund_switch"-->
+    <com.citylinkdata.yongzhou.userview.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        app:title="@string/nfc_recharge"></com.citylinkdata.yongzhou.userview.TitleView>
+
+
+    <com.citylinkdata.yongzhou.userview.GuideView
+        android:layout_below="@id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:type="4"></com.citylinkdata.yongzhou.userview.GuideView>
+
+    <ImageView
+        android:id="@+id/move_card_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/card_read_nfc_recharge" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/phone_reading" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="28sp"
+                android:textColor="@color/white"
+                android:text="+0.1" />
+
+            <TextView
+                android:id="@+id/tv_tips"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_wallet"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:maxLines="1"
+                android:text="@string/please_paste_card"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/cloud_tips_basemap"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red_tips"
+            android:textSize="18sp"
+            android:text="@string/tips" />
+
+        <TextView
+            android:id="@+id/tv_charge_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@color/blue_dark"
+            android:text="@string/recharge_tips" />
+        <TextView
+            android:id="@+id/tv_charge_status_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:textColor="@color/blue_dark"
+            android:text="@string/please_open_nfc" />
+
+        <!--<TextView-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/not_connected_to_the_Bluetooth_reader" />-->
+
+    </LinearLayout>
+
+</RelativeLayout>

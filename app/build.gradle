@@ -1,0 +1,115 @@
+apply plugin: 'com.android.application'
+apply from: 'replugin.gradle'
+apply from: 'public-xml.gradle'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.citylinkdata.yongzhou"
+        minSdkVersion 19
+        targetSdkVersion 22
+        versionCode 6
+        versionName "1.0.5"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+
+        // ======= REPLUGIN =======
+        buildConfigField "int", "ACTIVITY_PIT_COUNT_TS_STANDARD", config.ACTIVITY_PIT_COUNT_TS_STANDARD
+        buildConfigField "int", "ACTIVITY_PIT_COUNT_TS_SINGLE_TOP", config.ACTIVITY_PIT_COUNT_TS_SINGLE_TOP
+        buildConfigField "int", "ACTIVITY_PIT_COUNT_TS_SINGLE_TASK", config.ACTIVITY_PIT_COUNT_TS_SINGLE_TASK
+        buildConfigField "int", "ACTIVITY_PIT_COUNT_TS_SINGLE_INSTANCE", config.ACTIVITY_PIT_COUNT_TS_SINGLE_INSTANCE
+        buildConfigField "int", "ACTIVITY_PIT_COUNT_NTS_STANDARD", config.ACTIVITY_PIT_COUNT_NTS_STANDARD
+        buildConfigField "int", "ACTIVITY_PIT_COUNT_NTS_SINGLE_TOP", config.ACTIVITY_PIT_COUNT_NTS_SINGLE_TOP
+        buildConfigField "int", "ACTIVITY_PIT_COUNT_NTS_SINGLE_TASK", config.ACTIVITY_PIT_COUNT_NTS_SINGLE_TASK
+        buildConfigField "int", "ACTIVITY_PIT_COUNT_NTS_SINGLE_INSTANCE", config.ACTIVITY_PIT_COUNT_NTS_SINGLE_INSTANCE
+        buildConfigField "int", "ACTIVITY_PIT_COUNT_TASK", config.ACTIVITY_PIT_COUNT_TASK
+        buildConfigField "int", "ADAPTER_COMPATIBLE_VERSION", config.ADAPTER_COMPATIBLE_VERSION
+        buildConfigField "int", "ADAPTER_CURRENT_VERSION", config.ADAPTER_CURRENT_VERSION
+        // ========================
+
+        ndk {
+            //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86","arm64-v8a","x86_64"
+        }
+    }
+    signingConfigs {
+        debug {
+            storeFile file('yongzhou.jks')
+            storePassword 'yongzhou123321'
+            keyAlias 'yongzhou'
+            keyPassword 'yongzhou123321'
+        }
+
+        release {
+            storeFile file('yongzhou.jks')
+            storePassword 'yongzhou123321'
+            keyAlias 'yongzhou'
+            keyPassword 'yongzhou123321'
+        }
+    }
+    buildTypes {
+
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+            proguardFiles 'proguard-rules.pro'
+        }
+        release {
+            // 是否进行混淆
+            minifyEnabled false
+            // 混淆文件的位置
+            signingConfig signingConfigs.release
+            proguardFiles 'proguard-rules.pro'
+        }
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+
+
+    }
+
+
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':citycardlib')
+    //    compile files('libs/tkb_ble_jar_v2.2.30.jar')
+    compile(name: 'cld_blecitycard2.4', ext: 'aar')
+    compile(name: 'loansdk-appsdk-publish', ext: 'aar')
+    compile(name: 'replugin-core-publish-2.0.0', ext: 'aar')
+    compile(name: 'replugin-sdk-publish-2.0.0', ext: 'aar')
+    compile project(':bus')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:support-vector-drawable:25.3.1'
+    compile 'com.youth.banner:banner:1.4.10'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.squareup.okhttp3:okhttp:3.9.0'
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/UPPayAssistEx.jar')
+    compile files('libs/UPPayPluginExPro.jar')
+}

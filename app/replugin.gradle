@@ -1,0 +1,58 @@
+/**
+ * 用来封装RePlugin的Gradle逻辑
+ * 注意：请勿修改此文件。所有设置均在replugin.properties中
+ */
+
+// ======= REPLUGIN =======
+// FIXME 【WARNING】 该文件所有内容【请勿修改】，否则会出现问题
+// FIXME 所有修改均通过 【replugin.properties】 文件来做
+
+// 从Config中读取各种配置
+ext {
+    config = readConfig()
+}
+
+def readConfig() {
+    Properties properties = new Properties()
+    file('replugin.properties').withInputStream {
+        properties.load(it)
+    }
+    properties
+}
+
+// 将相应属性写入gradle.ext中，方便后面使用
+// [replugin.properties]
+gradle.ext.persistentProcessEnable = config.PERSISTENT_ENABLE
+gradle.ext.persistentProcessName = config.PERSISTENT_NAME
+// [AndroidManifest.xml]
+gradle.ext.hostVersionName = android.defaultConfig.versionName
+gradle.ext.hostVersionCode = android.defaultConfig.versionCode
+gradle.ext.persistentProcessFinalName = gradle.persistentProcessEnable ? gradle.persistentProcessName : ""
+android.defaultConfig.manifestPlaceholders = [persistentName: gradle.persistentProcessFinalName]
+
+// 将相应属性写入 RePlugin-Gradle 插件中，方便后面编译
+apply plugin: 'replugin'
+replugin {
+    // 常驻进程名称
+    persistentName = config.PERSISTENT_NAME
+
+    // 自定义进程数量
+    countProcess = Integer.parseInt(config.ACTIVITY_PIT_COUNT_PROCESS)
+
+    // 单个 launchMode 中，透明主题的数量
+    countTranslucentStandard = Integer.parseInt(config.ACTIVITY_PIT_COUNT_TS_STANDARD)
+    countTranslucentSingleTop = Integer.parseInt(config.ACTIVITY_PIT_COUNT_TS_SINGLE_TOP)
+    countTranslucentSingleTask = Integer.parseInt(config.ACTIVITY_PIT_COUNT_TS_SINGLE_TASK)
+    countTranslucentSingleInstance = Integer.parseInt(config.ACTIVITY_PIT_COUNT_TS_SINGLE_INSTANCE)
+
+    // 单个 launchMode 中，非 透明主题的数量
+    countNotTranslucentStandard = Integer.parseInt(config.ACTIVITY_PIT_COUNT_NTS_STANDARD)
+    countNotTranslucentSingleTop = Integer.parseInt(config.ACTIVITY_PIT_COUNT_NTS_SINGLE_TOP)
+    countNotTranslucentSingleTask = Integer.parseInt(config.ACTIVITY_PIT_COUNT_NTS_SINGLE_TASK)
+    countNotTranslucentSingleInstance = Integer.parseInt(config.ACTIVITY_PIT_COUNT_NTS_SINGLE_INSTANCE)
+
+    // 宿主中声明的 TaskAffinity 的组数
+    countTask = Integer.parseInt(config.ACTIVITY_PIT_COUNT_TASK)
+}
+
+// ========================

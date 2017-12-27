@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="home_menu_title">
+        <item >卡片充值</item>
+        <item >卡片查询</item>
+        <item >营业网点</item>
+        <item >联系客服</item>
+        <item >充值记录</item>
+        <item >线路查询</item>
+        <!--退款记录暂时不上线-->
+        <!--<item >退款申请</item>-->
+        <item>使用指南</item>
+        <item>更多</item>
+    </string-array>
+
+    <!--<item >"com.citylinkdata.yongzhou.view.impl.activity.BraceletRechargeActivity"</item>-->
+    <string-array name="home_menu_activity_name">
+        <item >com.citylinkdata.yongzhou.view.impl.activity.cardRecharge.CardRechargeActivity</item>
+        <item >com.citylinkdata.yongzhou.view.impl.activity.CardInquireActivity</item>
+        <!--网页版营业网点-->
+        <!--<item >com.citylinkdata.yongzhou.view.impl.activity.ServiceStationActivity</item>-->
+
+        <item >com.citylinkdata.yongzhou.view.impl.activity.OutletsMapActivity</item>
+        <item>""</item>
+        <item >com.citylinkdata.yongzhou.view.impl.activity.cardRecharge.RechargeRecordActivity</item>
+        <!--<item >com.citylinkdata.yongzhou.view.impl.activity.BusLineStationQueryActivity</item>-->
+        <item >com.citylinkdata.bus.MainActivity</item>
+        <!--退款记录暂时不上线-->
+        <!--<item >com.citylinkdata.yongzhou.view.impl.activity.cardRecharge.RefundsActivity</item>-->
+        <item>""</item>
+        <item>""</item>
+    </string-array>
+
+    <integer-array name="home_menu_image">
+        <item >@drawable/menu_recharge</item>
+        <item >@drawable/menu_inquire</item>
+        <item >@drawable/menu_outlets</item>
+        <!--<item >@drawable/menu_micro_mall</item>-->
+        <item >@drawable/menu_customer</item>
+        <item >@drawable/menu_recharge_record</item>
+        <item >@drawable/menu_line_inquiry</item>
+        <!--退款记录暂时不上线-->
+        <!--<item >@drawable/menu_refunds</item>-->
+        <item >@drawable/menu_user_guidance</item>
+        <item >@drawable/menu_more</item>
+    </integer-array>
+
+    <string-array name="home_other_menu_title">
+        <item >晋商360借条</item>
+        <item >理财产品</item>
+        <item >意外保险</item>
+        <item >海淘商城</item>
+        <item>使用指南</item>
+        <item >联系客服</item>
+        <item >意见反馈</item>
+    </string-array>
+
+    <string-array name="home_other_menu_activity_name">
+        <item >""</item>
+        <item >""</item>
+        <item >""</item>
+        <item >""</item>
+        <item>""</item>
+        <item >""</item>
+        <item >""</item>
+        <item >""</item>
+        <item>"com.citylinkdata.yongzhou.view.impl.activity.FeedbackActivity"</item>
+    </string-array>
+
+    <integer-array name="home_other_menu_image">
+        <item >@drawable/menu_inquire</item>
+        <item >@drawable/menu_inquire</item>
+        <item >@drawable/menu_inquire</item>
+        <item >@drawable/menu_inquire</item>
+        <item >@drawable/menu_inquire</item>
+        <item >@drawable/menu_inquire</item>
+    </integer-array>
+
+    <!--惠生活-->
+    <string-array name="life_menu_title">
+        <item >晋商360借条</item>
+        <item >海淘商城</item>
+        <item >保险</item>
+    </string-array>
+
+    <string-array name="life_menu_activity_name">
+        <item >""</item>
+        <item >""</item>
+        <item >""</item>
+    </string-array>
+
+    <integer-array name="life_menu_image">
+        <item >@drawable/main_life_360</item>
+        <item >@drawable/main_life_sea_amoy</item>
+        <item >@drawable/main_life_insurance</item>
+    </integer-array>
+
+</resources>

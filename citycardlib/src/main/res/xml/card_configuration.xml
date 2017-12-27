@@ -1,0 +1,172 @@
+<!--城市公交卡列表  三亚 5720
+太仓 2154
+常熟 2155
+榆林 7190
+海口 5899
+澳门 9001
+福州 3500
+舟山 3160
+驻马店 4630
+沈阳 1100
+吉林 两个AID
+广州 待定
+-->
+<city_root>
+    <city_code>
+        <!---选择文件-->
+        <excu_file name="select_file">
+            <cmd_file>
+                <cmd>00A40000023F00</cmd>
+                <cmd>00A40000023F01</cmd>
+            </cmd_file>
+
+            <cmd_file>
+                <cmd>00A40000023F00</cmd>
+                <cmd>00A40000021001</cmd>
+            </cmd_file>
+
+            <cmd_file>
+                <cmd>00A4000002DDF1</cmd>
+                <cmd>00A4000002ADF3</cmd>
+            </cmd_file>
+
+            <cmd_file>
+                <cmd>00A4040009A00000000886980701</cmd>
+            </cmd_file>
+        </excu_file>
+        <!---获取citycode指令-->
+        <excu_code name="cmd_code">
+            <cmd_code>
+                <cmd>00B0950202</cmd>
+            </cmd_code>
+        </excu_code>
+    </city_code>
+
+  <!--  name="测试卡,三亚,海口,太仓,舟山,澳门,驻马店,榆林,郑州"
+    code="0000,5720,5899,2154,3160,9001,4630,7190,4500"-->
+    <!--**********************************************************************************-->
+    <!--**********************************************************************************000000-->
+    <city_list>
+        <city
+            name="测试,太仓"
+            code="0000,2154"
+            response_handle="com.citylink.tsm.citycard.cityic.UnionIC">
+            <!--response_handle 响应处理类 -->
+            <!-- 选择文件 -->
+            <excu_cmd name="city_file_cmd">
+                <cmd>00A40000023F00</cmd>
+                <cmd>00A40000023F01</cmd>
+                <cmd>00A40000023F00</cmd>
+                <cmd>00A40000021001</cmd>
+            </excu_cmd>
+            <!-- 本地消费记录 -->
+            <excu_cmd name="local_recoder">
+                <cmd>00A40000020018</cmd>
+            </excu_cmd>
+
+            <!-- 异地消费记录 -->
+            <excu_cmd name="remove_recoder">
+                <cmd>00A40000020010</cmd>
+            </excu_cmd>
+
+            <!-- 充值记录 -->
+            <excu_cmd name="charge_recode">
+                <cmd>00A4000002001A</cmd>
+            </excu_cmd>
+
+            <excu_cmd name="appserial">
+                <cmd>00B0950C08</cmd><!-- AppSerial -->
+                <cmd>00B0950202</cmd><!-- AppSerial -->
+            </excu_cmd>
+
+            <excu_cmd name="cardnum">
+                <cmd>00B0950C08</cmd><!-- AppSerial -->
+                <cmd>00B0950202</cmd><!-- AppSerial -->
+            </excu_cmd>
+            <excu_cmd name="blance">
+                <cmd>805C000204</cmd><!-- Blance -->
+            </excu_cmd>
+        </city>
+        <city
+            name="常熟" code="2155"
+            response_handle="com.citylink.tsm.citycard.cityic.ChangShuIC">
+            <!--response_handle 响应处理类 -->
+            <!-- 选择文件 -->
+            <excu_cmd name="city_file_cmd">
+                <cmd>00A40000023F00</cmd>
+                <cmd>00A40000023F01</cmd>
+            </excu_cmd>
+            <!-- 本地消费记录 -->
+            <excu_cmd name="local_recoder">
+                <cmd>00A40000020018</cmd>
+            </excu_cmd>
+            <!-- 异地消费记录 -->
+            <excu_cmd name="remove_recoder">
+                <cmd>00A40000020010</cmd>
+            </excu_cmd>
+            <!-- 充值记录 -->
+            <excu_cmd name="charge_recode">
+                <cmd>00A40000020018</cmd>
+            </excu_cmd>
+            <excu_cmd name="terminalno">
+                <cmd>00B0830006</cmd><!-- TerminalNo -->
+            </excu_cmd>
+            <excu_cmd name="appserial">
+                <cmd>00B0950C08</cmd><!-- AppSerial -->
+                <cmd>00B0950202</cmd><!-- AppSerial -->
+            </excu_cmd>
+            <excu_cmd name="cardnum">
+                <cmd>00B0950C08</cmd><!-- AppSerial -->
+                <cmd>00B0950202</cmd><!-- AppSerial -->
+            </excu_cmd>
+            <excu_cmd name="blance">
+                <cmd>805C000204</cmd><!-- Blance -->
+            </excu_cmd>
+        </city>
+        <city
+            name="永州" code="4250"
+            response_handle="com.citylink.tsm.citycard.cityic.YongzhouIC">
+            <!--response_handle 响应处理类 -->
+            <!-- 选择文件 -->
+            <excu_cmd name="city_file_cmd">
+                <cmd>00A40000023F00</cmd>
+                <cmd>00A40000023F01</cmd>
+            </excu_cmd>
+            <!-- 本地消费记录 -->
+            <excu_cmd name="local_recoder">
+                <cmd>00A40000020018</cmd>
+            </excu_cmd>
+            <!-- 异地消费记录 -->
+            <excu_cmd name="remove_recoder">
+                <cmd>00A40000020010</cmd>
+            </excu_cmd>
+            <!-- 充值记录 -->
+            <excu_cmd name="charge_recode">
+                <cmd>00A40000020018</cmd>
+            </excu_cmd>
+            <excu_cmd name="terminalno">
+                <cmd>00B0830006</cmd><!-- TerminalNo -->
+            </excu_cmd>
+            <excu_cmd name="appserial">
+                <cmd>00B0950C08</cmd><!-- AppSerial -->
+                <cmd>00B0950202</cmd><!-- AppSerial -->
+            </excu_cmd>
+            <excu_cmd name="cardnum">
+                <cmd>00B0950C08</cmd><!-- AppSerial -->
+                <cmd>00B0950202</cmd><!-- AppSerial -->
+            </excu_cmd>
+            <excu_cmd name="blance">
+                <cmd>805C000204</cmd><!-- Blance -->
+            </excu_cmd>
+            <!--查询有效期-->
+            <excu_cmd name="card_date">
+                <cmd>00B0951804</cmd>
+            </excu_cmd>
+            <!--查询卡片是否有效--><!--<cmd>00A40000023F01</cmd>-->
+            <excu_cmd name="card_enabled">
+                <cmd>00B0950801</cmd>
+            </excu_cmd>
+        </city>
+    </city_list>
+
+</city_root>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/grag_bg"
+    android:layout_height="match_parent">
+    
+    <EditText
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:textColor="@color/black_menu"
+        android:textSize="@dimen/input_textsize"
+        android:hint="@string/please_enter_a_cartoon_number"
+        android:gravity="center_vertical"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:text="@string/inquire"/>
+    
+    
+
+</LinearLayout>

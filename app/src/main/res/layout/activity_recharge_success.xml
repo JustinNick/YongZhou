@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <com.citylinkdata.yongzhou.userview.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:title="@string/card_recharge">
+
+
+    </com.citylinkdata.yongzhou.userview.TitleView>
+
+    <ImageView
+        android:id="@+id/iv_recharge_state"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_recharge_success"/>
+
+    <TextView
+        android:id="@+id/tv_recharge_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="@string/recharge_success"
+        android:textColor="@color/black_menu"
+        android:textSize="24sp" />
+
+    <View
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line_main"/>
+
+
+    <TextView
+        android:id="@+id/tv_balance_before"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/charge_the_balance_before"
+        android:textColor="@color/news_gray_dark"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_balance_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/current_balance"
+        android:textColor="@color/news_gray_dark"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_card_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/recharge_card_number"
+        android:textColor="@color/news_gray_dark"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_recharge_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/transaction_hour"
+        android:textColor="@color/news_gray_dark"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red_tips"
+            android:text="@string/tips_titile"/>
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue_dark"
+            android:text="@string/fill_up_tips_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_failed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_continue_recharge"
+            android:onClick="onClick"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/ss_btn_corner_bg"
+            android:text="@string/continue_recharge"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:onClick="onClick"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ss_btn_corner_bg"
+            android:text="@string/cancel"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

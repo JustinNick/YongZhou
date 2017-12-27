@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grag_bg">
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#999999"
+        android:layout_height="24dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="16sp"
+        android:textColor="@color/black_menu"
+        android:background="@color/white"
+        android:gravity="center"
+
+        android:text="@string/benefits_life"/>
+
+    <TextView
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:paddingLeft="18dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black_menu"
+        android:textSize="14sp"
+        android:text="@string/high_quality_recommended"/>
+    <TextView
+        android:textSize="12sp"
+        android:paddingLeft="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/white"
+        android:text="@string/benefits_life_tips"/>
+<EditText
+    android:id="@+id/et_phone"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <ListView
+        android:layout_marginTop="15dp"
+        android:id="@+id/listview"
+        android:dividerHeight="15dp"
+        android:footerDividersEnabled="false"
+        android:layout_marginBottom="10dp"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grag_bg"
+    android:orientation="vertical">
+
+    <com.citylinkdata.yongzhou.userview.TitleView
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        app:title="@string/card_recharge"></com.citylinkdata.yongzhou.userview.TitleView>
+
+
+
+    <com.citylinkdata.yongzhou.userview.GuideView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:type="1"></com.citylinkdata.yongzhou.userview.GuideView>
+    <TextView
+
+        android:id="@+id/nfc_recharge"
+        style="@style/IconMenuItemStyle"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/icon_nfc"
+        android:onClick="onClick"
+        android:text="@string/nfc_recharge" />
+
+    <View style="@style/MenuItemLineStyle" />
+
+    <TextView
+        android:id="@+id/bluetooth_card_reader"
+        style="@style/IconMenuItemStyle"
+        android:onClick="onClick"
+        android:drawableLeft="@drawable/icon_bluetooth"
+        android:text="@string/bluetooth_card_reader" />
+
+    <View style="@style/MenuItemLineStyle" />
+
+    <TextView
+        android:id="@+id/wristband_card_reader"
+        style="@style/IconMenuItemStyle"
+        android:onClick="onClick"
+        android:drawableLeft="@drawable/icon_wristband"
+        android:visibility="gone"
+        android:text="@string/bracelet_recharge" />
+
+    <View style="@style/MenuItemLineStyle" android:visibility="gone" />
+
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/fill_up_the_recharge"
+        style="@style/IconMenuItemStyle"
+        android:onClick="onClick"
+        android:drawableLeft="@drawable/icon_budeng"
+        android:text="@string/fill_up_the_recharge" />
+
+    <View style="@style/MenuItemLineStyle" />
+
+    <TextView
+        android:id="@+id/refund_application"
+        style="@style/IconMenuItemStyle"
+        android:onClick="onClick"
+        android:visibility="gone"
+        android:drawableLeft="@drawable/icon_tuikuan"
+        android:text="@string/refund_application" />
+
+
+</LinearLayout>

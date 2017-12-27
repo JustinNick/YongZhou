@@ -1,0 +1,205 @@
+<resources>
+    <string name="app_name">乐行.永州</string>
+    <string name="title_home">首页</string>
+    <string name="title_find">惠生活</string>
+    <string name="title_my">我的</string>
+    <string name="title_more">更多</string>
+
+    <string name="use_guidance">使用指南</string>
+    <string name="Feedback">意见反馈</string>
+    <string name="telephone_customer_service">电话客服</string>
+    <string name="about_us">关于我们</string>
+    <string name="version_update">版本更新</string>
+
+    <string name="refund_application">退款申请</string>
+    <string name="login_password">登陆密码</string>
+    <string name="transaction_password">交易密码</string>
+    <string name="sign_out">退出登陆</string>
+    <string name="business_update">业务更新中...</string>
+
+    <string name="bindInquire">绑卡查询</string>
+    <string name="paseInquire">贴卡查询</string>
+    <string name="readInquire">读卡器查询</string>
+    <string name="function_is_under_development">此功能正在加紧开发中...</string>
+    <string name="inquire">查询</string>
+    <string name="please_enter_a_cartoon_number">请输入一卡通号码</string>
+    <string name="attach_the_card_to_the_back_of_the_phone">请将一卡通贴在手机背面\n开启NFC功能</string>
+    <string name="attach_the_card_to_the_back_of_the_phone_inquire">请将卡片贴在手机背面</string>
+    <string name="nfc_sensing_area">NFC感应区</string>
+    <string name="tips">温馨提示</string>
+    <string name="tips_titile">温馨提示：</string>
+
+    <!--通卡宝-->
+    <string name="connected_tips">已连接</string>
+    <string name="please_open_the_bluetooth_card_reader">请打开蓝牙读卡器</string>
+    <string name="turn_on_bluetooth">开启蓝牙功能</string>
+    <string name="lease_stick_a_card_on_the_card_reader">请将一卡通贴在读卡器上</string>
+    <string name="card_reader_device_is_disconnected">读卡设备已断开</string>
+    <string name="reading_the_card">请稍后，正在读卡中...</string>
+    <string name="reading_the_card_tips">读卡中...</string>
+    <string name="the_card_has_left_please_repaste_the_card">卡片已离开,请重新贴卡</string>
+    <string name="please_keep_the_card_stuck_on_the_card_reader">请保持卡片贴在读卡器上,直到充值完成</string>
+    <string name="until_the_recharge_is_completed"></string>
+    <string name="bluetooth_reader_search">蓝牙读卡器搜索中...</string>
+    <string name="not_connected_to_the_Bluetooth_reader">未连接到蓝牙读卡器</string>
+    <string name="search_bluetooth_time_out">搜索设备超时，是否重新搜索？</string>
+    <!--<string name="bluetooth_disconnected_tips">设备已断开，是否重新连接</string>-->
+    <string name="bluetooth_disconnected_tips">设备已断开</string>
+
+    <string name="please_open_nfc">开启NFC功能</string>
+    <string name="nfc_recharging">充值中...</string>
+    <string name="nfc_recharging_tips1">请保持卡片贴在手机背面\n直到充值完成</string>
+
+
+    <string name="card_recharge">卡片充值</string>
+    <string name="nfc_recharge">NFC充值</string>
+    <string name="fill_up_the_recharge">补登充值</string>
+    <string name="bluetooth_card_reader">蓝牙读卡器</string>
+    <string name="bluetooth_card_reader_recharge">蓝牙读卡器充值</string>
+    <string name="nfc_card_charge_recodes">充值记录</string>
+    <string name="card_inquiry">卡片查询</string>
+    <string name="service_station">营业网点</string>
+    <string name="bus_line_query">公交线路查询</string>
+    <!--注册登录忘记密码-->
+    <string name="register_by_user">自助注册</string>
+    <string name="register">注册</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="forget_password_title">忘记密码</string>
+    <string name="telephone_num">手机号：</string>
+    <string name="send">发送</string>
+    <string name="fill_in_mobile_number">填写手机号</string>
+    <string name="verification_code">验证码：</string>
+    <string name="fill_in_verification_code">填写验证码</string>
+    <string name="password">密&#160;&#160;&#160;&#160;码：</string>
+    <string name="fill_in_6_to_20_digits_plus_letters">填写6到20位数字加字母</string>
+    <string name="agree">同意</string>
+    <string name="user_Registration_Agreement">用户注册协议</string>
+    <string name="register_an_account">账号注册</string>
+    <string name="phone_username">手机号/用户名</string>
+    <string name="confirm_reset">确认重置</string>
+    <string name="reset_the_login_password">重置登录密码</string>
+    <string name="no_fill_mobile_number">请输入电话号码</string>
+    <string name="no_fill_login_password">请输入电话号码</string>
+    <!--修改登录密码-->
+    <string name="old_password">原&#160;&#160;密&#160;&#160;码：</string>
+    <string name="new_password">新&#160;&#160;密&#160;&#160;码：</string>
+    <string name="confirm_password">再次确认：</string>
+    <string name="modify_password_sucess">密码修改成功</string>
+
+    <!--反馈-->
+    <string name="spit_feedback_type">反馈类型：</string>
+    <string name="spit_bad_area">吐糟区：</string>
+    <string name="so_that_we_can_contact_you">便于我们与您联系</string>
+    <string name="determine">确定</string>
+    <string name="feedback_tips">有任何意见或者建议？快来告诉我们吧</string>
+
+    <!--修改密码-->
+    <string name="fill_in_the_old_password">填写原密码</string>
+    <string name="fill_in_the_new_password">填写新密码</string>
+    <string name="fill_in_the_confirm_password">确认新密码</string>
+    <string name="enter_the_transaction_password">输入6位数字交易密码</string>
+
+    <string name="tell_num">tel:07468223456</string>
+    <string name="bracelet_recharge">手环充值</string>
+    <string name="finger_search">手环搜索中...</string>
+    <string name="register_tips">未同意用户注册协议不能完成注册!</string>
+    <string name="phone_is_error">手机号码不正确</string>
+    <string name="password_is_error">密码必须为6-20位字母加数字</string>
+    <string name="tr_password_is_error">交易密码必须为6位数字</string>
+
+    <string name="vertifycode_is_error">请输入正确的验证码</string>
+    <string name="register_success">注册成功</string>
+    <string name="login_success">登录成功</string>
+    <string name="feedback_content_can_not_be_empty">反馈内容不能为空</string>
+    <string name="please_enter_a_valid_phone_number">请输入正确的手机号</string>
+    <string name="feedback_type_unselected">请选择反馈的类型</string>
+    <string name="update_success">意见反馈成功</string>
+    <string name="username_can_not_be_empty">用户名不能为空</string>
+    <string name="password_can_not_be_empty">密码不能为空</string>
+    <string name="new_password_can_not_be_empty">新密码不能为空</string>
+    <string name="old_password_can_not_be_empty">原密码不能为空</string>
+    <string name="comfirm_password_can_not_be_empty">确认密码不能为空</string>
+    <string name="confirm_the_password_is_inconsistent">新密码与确认密码不一致</string>
+    <string name="new_password_is_the_same_as_the_old_password">新密码与原密码一致</string>
+    <string name="not_loggin">未登录</string>
+    <string name="is_the_latest_version">已是最新版本</string>
+    <string name="version_updated_friends">版本更新啦</string>
+    <string name="update_immediately">立即升级</string>
+    <string name="cancel">取消</string>
+
+    <string name="background_download">后台下载中...</string>
+    <string name="news_title">永州公交网</string>
+
+    <string name="simple_tips">提示</string>
+
+    <string name="benefits_life">惠生活</string>
+    <string name="high_quality_recommended">优质推荐</string>
+    <string name="benefits_life_tips">值得体验的品质生活</string>
+    <string name="yongzhou">永州市</string>
+    <string name="search_hint">搜索公交车线路、站点</string>
+    <string name="unlogin">未登录</string>
+    <string name="logout_description">确认退出登录？</string>
+
+    <string name="cardnum_title">卡号：</string>
+    <string name="card_balance_title">余额：</string>
+    <string name="please_paste_card">请贴卡...</string>
+    <string name="recharge_tips">请将一卡通贴在手机背面\n直到充值完成</string>
+    <string name="recharge_success">充值成功</string>
+    <string name="charge_the_balance_before">充前余额：</string>
+    <string name="current_balance">当前余额：</string>
+    <string name="recharge_card_number">充值卡号：</string>
+    <string name="transaction_hour">交易时间：</string>
+    <string name="unionpay_call_failed">银联调用失败...</string>
+    <string name="recharge_amount">充值金额：</string>
+    <string name="serial_number">流水编号：</string>
+    <string name="no_more_data">没有更多数据了</string>
+    <string name="load_again">，点击图像重新加载</string>
+    <string name="no_data">暂无记录</string>
+
+    <string name="item_ardnum_title">卡&#160;&#160;&#160;&#160;号：</string>
+    <string name="item_serial_number">流水号：</string>
+    <string name="determine_refunds">确认退款？</string>
+    <string name="transaction_successful">交易成功</string>
+    <string name="transaction_failed">交易失败</string>
+    <string name="require_refunds">申请退款</string>
+    <string name="fill_up_tips">温馨提示：支付完成后，要到附近的补登机刷卡才能到账哦~</string>
+    <string name="fill_up_tips_content">支付完成后，要到附近的补登机刷卡才能到账哦~</string>
+    <string name="fill_up_hint">请输入充值卡号</string>
+    <string name="personal_information">个人信息</string>
+    <string name="nick_name_title">昵&#160;&#160;&#160;&#160;称:</string>
+    <string name="name_title">姓&#160;&#160;&#160;&#160;名:</string>
+    <string name="sex_title">姓&#160;&#160;&#160;&#160;别:</string>
+    <string name="id_card_title">身份证:</string>
+    <string name="phone_number_title">手机号:</string>
+    <string name="save">保存</string>
+    <string name="boy"> 男 </string>
+    <string name="girl"> 女 </string>
+    <string name="please_enter_your_real_name">请输入真实姓名</string>
+    <string name="please_enter_identification_number">请输入身份证号</string>
+    <string name="updateinfo_no_nickname">请输入一个属于您的昵称。</string>
+    <string name="updateinfo_no_realname">请输入您的姓名。</string>
+    <string name="updateinfo_no_gender">请选择您的性别。</string>
+    <string name="updateinfo_no_idcode">请输入您的身份证号码。</string>
+    <string name="continue_recharge">继续充值</string>
+    <string name="recharge_failed">充值失败</string>
+    <string name="recharge_tips_failed">点击取消之后，您支付的金额会保存在我的账号余额中~</string>
+    <string name="recharge_running">正在充值，请勿移动卡片</string>
+    <string name="please_input_cardnum">请填写卡号</string>
+    <string name="next">下一步</string>
+    <string name="no_function">暂无更多功能哦~</string>
+    <string name="send_sms_success">验证码发送成功</string>
+    <string name="large_recharge_tips">卡片余额+充值金额不能大于1000哦~</string>
+    <string name="outlets">营业网点</string>
+    <string name="Outlets_detail">网点详情</string>
+    <string name="load_avator_success">上传头像成功</string>
+
+    <string name="please_input_16_cardnum">卡号必需是16位哦~</string>
+    <string name="card_num_erro">卡号位数不正确</string>
+    <string name="micro_mall">微商城</string>
+    <string name="insurance">保险</string>
+
+    <string name="order_title">订单编号：</string>
+    <string name="remark_title">备&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;注：</string>
+
+
+</resources>

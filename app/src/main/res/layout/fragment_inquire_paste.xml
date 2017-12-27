@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:background="@color/grag_bg"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/blue_dark"
+        android:textSize="16sp"
+        android:text="@string/attach_the_card_to_the_back_of_the_phone_inquire"/>
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/tv_tips"
+        android:layout_height="wrap_content"
+        android:background="@drawable/phone_bg">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/nfc_sensing_area"/>
+
+        <FrameLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/nfc_signal_imageview"
+            android:layout_centerInParent="true"
+            android:layout_width="80dp"
+            android:layout_height="180dp"
+            android:src="@drawable/nfc_anim"/>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/move_card_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/card_inquire"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

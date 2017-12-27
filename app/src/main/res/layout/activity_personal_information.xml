@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.citylinkdata.yongzhou.userview.TitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/personal_information"></com.citylinkdata.yongzhou.userview.TitleView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/per_info_LinearLayout"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                style="@style/per_info_title"
+                android:layout_marginLeft="10dp"
+                android:text="@string/nick_name_title" />
+
+            <EditText
+                android:id="@+id/et_nickname"
+                style="@style/per_info_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_line_main" />
+
+
+        <LinearLayout style="@style/per_info_LinearLayout"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                style="@style/per_info_title"
+                android:layout_marginLeft="10dp"
+                android:text="@string/name_title" />
+
+            <EditText
+                android:id="@+id/et_realname"
+                style="@style/per_info_content"
+                android:hint="@string/please_enter_your_real_name" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_line_main" />
+
+        <LinearLayout style="@style/per_info_LinearLayout"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                style="@style/per_info_title"
+                android:layout_marginLeft="10dp"
+                android:text="@string/sex_title" />
+
+            <RadioGroup
+                android:id="@+id/radio_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/selector_check"
+
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:text="@string/boy" />
+
+                <RadioButton
+                    android:id="@+id/radio_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:button="@drawable/selector_check"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:text="@string/girl" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_line_main" />
+
+        <LinearLayout style="@style/per_info_LinearLayout"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                style="@style/per_info_title"
+                android:layout_marginLeft="10dp"
+                android:text="@string/id_card_title" />
+
+            <EditText
+                android:id="@+id/et_idcode"
+                style="@style/per_info_content"
+                android:hint="@string/please_enter_identification_number" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_line_main" />
+
+        <LinearLayout
+            style="@style/per_info_LinearLayout"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/per_info_title"
+                android:text="@string/phone_number_title" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                style="@style/per_info_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_line_main" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_modify_personinfomation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ss_btn_corner_bg"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>

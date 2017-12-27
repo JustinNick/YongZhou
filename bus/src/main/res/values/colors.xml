@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="bus_colorPrimary">#428fec</color>
+    <color name="bus_colorPrimaryDark">#217eee</color>
+    <color name="bus_colorAccent">#303F9F</color>
+    <!--<color name="gray_line_main">#e5e5e5</color>-->
+    <color name="bus_gray_hint">#cccccc</color>
+
+    <color name="bus_white">#ffffff</color>
+    <color name="bus_grag_bg">#f0f0f0</color>
+    <color name="bus_transparent_black">#40000000</color>
+
+
+    <color name="bus_blue">#00ccff</color>
+    <color name="bus_act_background">#efefef</color>
+    <color name="bus_phone_bg">#f6f6f6</color>
+
+    <color name="bus_black"> #000000</color>
+    <color name="bus_transparent">#00000000</color>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#428fec</color>
+    <color name="colorPrimaryDark">#217eee</color>
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="colorAccent">#303F9F</color>
+    <color name="gray_line_main">#e5e5e5</color>
+    <color name="gray_hint">#cccccc</color>
+
+    <color name="black_menu">#333333</color>
+    <color name="black_menu_light">#656565</color>
+    <color name="white">#ffffff</color>
+    <color name="grag_bg">#f0f0f0</color>
+    <color name="transparent_black">#40000000</color>
+    <color name="guide_gray">#c2c2c2</color>
+
+    <color name="gray_tab">#666666</color>
+    <color name="gray_press">#e5e5e5</color>
+    <color name="news_gray_dark">#656565</color>
+    <color name="news_gray_light">#8a8a8a</color>
+
+    <color name="gray_pressed">#b5b5b6</color>
+    <color name="blue">#00ccff</color>
+    <color name="blue_dark">#19cec6</color>
+    <color name="green_text">#7accc8</color>
+    <color name="red_tips">#e75b3f</color>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.citylinkdata.bus.util.SearchPointActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/border_bg">
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:onClick="onClick"
+            android:src="@drawable/back_gray" />
+
+
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/image_back"
+            android:background="@drawable/shap_gray_corner_bg"
+            android:drawableLeft="@drawable/magnifier_gray"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:hint="到达地点"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/bus_gray_hint"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview_search"
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+        android:background="@color/bus_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

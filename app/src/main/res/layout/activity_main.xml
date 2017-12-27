@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.citylinkdata.yongzhou.view.impl.activity.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/rg_tab"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingTop="5dp"
+        android:layout_height="@dimen/main_bottombar_hight">
+        <Button
+            android:id="@+id/btn_home"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="@color/selector_tab_text_check"
+            android:text="@string/title_home"
+            android:drawablePadding="3dp"
+            android:onClick="onTabClicked"
+            android:drawableTop="@drawable/selector_mian_tab_home_select"
+             />
+        <Button
+            android:id="@+id/btn_find"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="@string/title_find"
+            android:drawablePadding="3dp"
+            android:onClick="onTabClicked"
+            android:textColor="@color/selector_tab_text_check"
+            android:drawableTop="@drawable/selector_mian_tab_find_select"/>
+        <Button
+            android:id="@+id/btn_my"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="@string/title_my"
+            android:drawablePadding="3dp"
+            android:onClick="onTabClicked"
+            android:textColor="@color/selector_tab_text_check"
+            android:drawableTop="@drawable/selector_mian_tab_my_select"/>
+        <Button
+            android:id="@+id/btn_more"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="@string/title_more"
+            android:drawablePadding="3dp"
+            android:onClick="onTabClicked"
+            android:textColor="@color/selector_tab_text_check"
+            android:drawableTop="@drawable/selector_mian_tab_more_select"/>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rg_tab" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/fragment_container"
+        android:background="@color/gray_line_main" />
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/grag_bg"
+    android:layout_height="match_parent">
+
+    <com.citylinkdata.yongzhou.userview.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        app:title="@string/nfc_recharge"
+        app:rightImageReId="@drawable/bluetooth_switch"></com.citylinkdata.yongzhou.userview.TitleView>
+
+
+
+    <com.citylinkdata.yongzhou.userview.GuideView
+        android:layout_below="@id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:type="4"></com.citylinkdata.yongzhou.userview.GuideView>
+
+
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/card_reader"/>
+
+
+    <ImageView
+        android:id="@+id/move_card_imageview"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/card_read"/>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cloud_tips_basemap"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tips" />
+
+        <TextView
+            android:id="@+id/tv_bluetooth_state"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bluetooth_reader_search" />
+
+        <TextView
+            android:id="@+id/tv_bluetooth_info"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/not_connected_to_the_Bluetooth_reader" />
+
+    </LinearLayout>
+
+</RelativeLayout>
